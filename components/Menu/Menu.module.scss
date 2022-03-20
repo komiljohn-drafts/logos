@@ -1,0 +1,24 @@
+@import "../../styles/mixins";
+
+.menu {
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+  &__list {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_item {
+      a {
+        @include font(15px, 18px, 600);
+      }
+    }
+  }
+  .action {
+    margin-left: 60px;
+    .login {
+      margin-right: 30px;
+    }
+  }
+}

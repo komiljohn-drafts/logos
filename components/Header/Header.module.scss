@@ -1,10 +1,45 @@
 @import "../../styles/_mixins";
 
-.coolTitle {
-  font-size: 50px;
-  color: var(--primary-color);
+.header {
+  padding: 8px 0;
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .delivery {
+      &__head {
+        @include font(18px, 22px, 600);
+        margin-bottom: 5px;
+        .place {
+          color: var(--primary-color);
+          margin-left: 8px;
+        }
+      }
+      &__foot {
+        @include font(14px, 17px, 600);
+        .time {
+          position: relative;
+          margin-right: 20px;
+          &::after {
+            content: "";
+            width: 4px;
+            height: 4px;
+            position: absolute;
+            top: 8px;
+            right: -10px;
+            border-radius: 2px;
+            background: var(--primary-color);
+          }
+        }
+      }
+    }
+    .action {
+      display: flex;
+      align-items: center;
+      a {
+        margin-left: 28px;
+        @include font(26px, 32px, 700, var(--primary-color));
+      }
+    }
+  }
 }
-
-// a {
-//   color: $primary-color;
-// }
