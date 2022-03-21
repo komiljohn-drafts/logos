@@ -1,0 +1,43 @@
+@import "../../styles/mixins";
+
+.banner {
+  height: 840px;
+  background: url("/images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 42%;
+  position: relative;
+  .shadow {
+    background: linear-gradient(to right, #000 30%, rgba(68, 64, 63, 0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+  }
+  .wrapper {
+    max-width: 1260px;
+    margin-inline: auto;
+    .content {
+      padding-top: 200px;
+      max-width: 670px;
+      position: relative;
+      z-index: 1;
+      font-family: var(--font-zing);
+      text-align: center;
+      p {
+        @include font(75px, 80px, 400, #fff);
+        transform: rotate(-8.37deg);
+        text-transform: uppercase;
+        margin-bottom: 50px;
+      }
+      button {
+        @include font(25px, 40px, 400, #fff);
+        background: var(--secondary-color);
+        transform: skew(-5.37deg, -8.37deg);
+        font-family: var(--font-zing);
+        padding: 5px 28px;
+      }
+    }
+  }
+}

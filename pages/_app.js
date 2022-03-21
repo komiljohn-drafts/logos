@@ -1,3 +1,4 @@
+import "../public/fonts/style.scss";
 import "../styles/globals.scss";
 
 function MyApp({ Component, pageProps }) {

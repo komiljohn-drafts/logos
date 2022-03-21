@@ -1,0 +1,13 @@
+@import "../../styles/mixins";
+.center {
+  opacity: 0.5;
+
+  .slider__item {
+  }
+  .slick-slide {
+    border-radius: 12px;
+  }
+  .slick-list .slick-track .slick-active {
+    opacity: 1 !important;
+  }
+}

@@ -1,0 +1,33 @@
+@import "../../styles/mixins";
+
+.search {
+  position: relative;
+  flex-grow: 1;
+  .geoIcon {
+    position: absolute;
+    top: 13px;
+    left: 14px;
+  }
+  .searchIcon {
+    position: absolute;
+    top: 13px;
+    right: 17px;
+  }
+  input {
+    width: 100%;
+    padding: 15.5px 50px;
+    border-radius: 10px;
+    background-color: var(--bg-primary);
+    outline: none;
+    border: none;
+    @include font(18px, 21px, 400, #cfcfcf);
+    font-family: "Gilroy Regular";
+    &::placeholder {
+      @include font(18px, 21px, 400, #cfcfcf);
+      font-family: "Gilroy Regular";
+    }
+    &:focus::placeholder {
+      font-size: 0;
+    }
+  }
+}

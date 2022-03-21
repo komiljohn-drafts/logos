@@ -1,45 +1,49 @@
 @import "../../styles/_mixins";
 
 .header {
-  padding: 8px 0;
-  .head {
+  padding: 23px 0;
+  .logo {
+    margin-right: 72px;
+  }
+  .wrapper {
+    max-width: 1240px;
+    margin-inline: auto;
+  }
+  .wrapper,
+  .left,
+  .right {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .delivery {
-      &__head {
-        @include font(18px, 22px, 600);
-        margin-bottom: 5px;
-        .place {
-          color: var(--primary-color);
-          margin-left: 8px;
-        }
-      }
-      &__foot {
-        @include font(14px, 17px, 600);
-        .time {
-          position: relative;
-          margin-right: 20px;
-          &::after {
-            content: "";
-            width: 4px;
-            height: 4px;
-            position: absolute;
-            top: 8px;
-            right: -10px;
-            border-radius: 2px;
-            background: var(--primary-color);
-          }
-        }
-      }
-    }
-    .action {
+  }
+  .right {
+    flex-grow: 1;
+    .contacts {
       display: flex;
       align-items: center;
-      a {
-        margin-left: 28px;
-        @include font(26px, 32px, 700, var(--primary-color));
+      .icon {
+        background: var(--secondary-color);
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .content {
+        margin-left: 10px;
+        p {
+          @include font(12px, 20px, 400, #cfcfcf);
+        }
+        a {
+          @include font(16px, 20px, 700, #cfcfcf);
+          font-family: "Gilroy Medium";
+        }
       }
     }
+  }
+  .left {
+    flex-grow: 1;
+    margin-right: 30px;
   }
 }

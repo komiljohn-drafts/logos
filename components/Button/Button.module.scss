@@ -1,10 +1,13 @@
 @import "../../styles/_mixins";
 
 .primary {
-  padding: 7px 25px;
-  background: var(--primary-color);
-  @include font(16px, 28px, 600, #fff);
-  border-radius: 8px;
+  padding: 14px 13px 14px 24px;
+  background: var(--secondary-color);
+  font-family: var(--font-regular);
+  @include font(14px, 24px, 600, #fff);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .secondary {
@@ -20,16 +23,25 @@
 
 .count {
   position: relative;
+  width: 24px;
+  height: 24px;
+  color: #000;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding-top: 2px;
+  margin-left: 32px;
 
-  margin-left: 30px;
   &::after {
     content: "";
     position: absolute;
-    top: -1px;
+    top: -7px;
     left: -17px;
-    width: 2px;
-    height: 23px;
+    width: 1px;
+    height: 38px;
     border-radius: 2px;
-    background: #fff;
+    background: #ffffff4d;
   }
 }
