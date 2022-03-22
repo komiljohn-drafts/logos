@@ -1,6 +1,7 @@
 import Image from "next/image";
 import cls from "./ProductCard.module.scss";
 import Button from "../Button";
+import { BasketSvg } from "../../utils/svgs";
 
 function ProductCard({ product }) {
   return (
@@ -17,7 +18,9 @@ function ProductCard({ product }) {
         <div className={cls.description}>{product.description}</div>
         <div className={cls.action}>
           <span className={cls.price}>{product.price}</span>
-          <Button>В корзину</Button>
+          <Button iconRight={<BasketSvg />} padding="10px 16px 10px 19px">
+            В корзину
+          </Button>
         </div>
       </div>
     </div>

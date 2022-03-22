@@ -1,4 +1,4 @@
-import { FacebookSvg, GeoLocationSvg, InstagramSvg, VKSvg, YoutubeSvg } from "../../utils/svgs";
+import { FacebookSvg, GeoLocationSvg, InstagramSvg, MessageSvg, VKSvg, YoutubeSvg } from "../../utils/svgs";
 import Button from "../Button";
 import cls from "./Contacts.module.scss";
 
@@ -20,7 +20,7 @@ function Contacts() {
             </div>
             <div className={cls.email}>
               <div className={cls.image}>
-                <GeoLocationSvg />
+                <MessageSvg />
               </div>
               <div className={cls.text}>
                 <span>Наша почта:</span>
@@ -30,7 +30,7 @@ function Contacts() {
           </div>
           <div className={cls.foot}>
             <div className={cls.action}>
-              <Button>ЗАБРОНИРОВАТЬ СТОЛ</Button>
+              <Button padding="22px 30px 21px">ЗАБРОНИРОВАТЬ СТОЛ</Button>
               <div className={cls.phone}>
                 <a href="tel:+7-917-510-57-59">+7 (917) 510-57-59</a>
                 <p>Звоните или оставляйте заявку</p>

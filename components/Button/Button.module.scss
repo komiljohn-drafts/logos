@@ -15,14 +15,14 @@
 }
 
 .secondary {
-  padding: 7px 27px;
-  @include font(14px, 28px, 700, #696f7a);
-  background: #f3f3f7;
-  border-radius: 28px;
-}
-
-.text {
-  @include font(16px, 28px, 700, #696f7a);
+  padding: 23px 25px 21px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  @include font(13px, 16px, 700, #fff);
+  font-family: var(--font-regular);
 }
 
 .count {
@@ -48,4 +48,9 @@
     border-radius: 2px;
     background: #ffffff4d;
   }
+}
+
+.iconRight {
+  display: flex;
+  margin-left: 12px;
 }

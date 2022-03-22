@@ -39,7 +39,9 @@ function About({ children }) {
             реку, уютные беседки на берегу реки и лучшая видовая террасса, шатер с посадкой на 200 человек, сказочный
             детский домик и бассейн.
           </p>
-          <Button shape="secondary">ПОСМОТРЕТЬ МЕНЮ</Button>
+          <Button padding="22px 25px 21px" shape="secondary">
+            ПОСМОТРЕТЬ МЕНЮ
+          </Button>
         </div>
         <div className={cls.right}>
           {features.map((feature) => (

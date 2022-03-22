@@ -20,6 +20,10 @@
     .left {
       z-index: 2;
       max-width: 563px;
+      button {
+        @include font(13px, 16px, 700, #fff);
+        font-family: var(--font-regular);
+      }
       .title {
         margin-bottom: 26px;
         @include font(32px, 39px, 700, #fff);
