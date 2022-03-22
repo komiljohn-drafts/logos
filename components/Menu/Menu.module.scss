@@ -1,23 +1,36 @@
 @import "../../styles/mixins";
 
-.wrapper {
-  max-width: 1240px;
-  margin-inline: auto;
-  .menu {
-    padding: 28px 0;
-    &__list {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      &_item {
-        a {
-          @include font(15px, 18px, 300, #ffffffcc);
+.menu {
+  padding: 28px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  .wrapper {
+    margin-inline: auto;
+    max-width: 1240px;
+    .nav {
+      &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &_item {
+          a {
+            @include font(15px, 18px, 300, #ffffffcc);
+          }
         }
-      }
-      &_item.active {
-        a {
-          color: #fff;
-          font-family: "Gilroy Medium";
+        &_item.active {
+          position: relative;
+          &::after {
+            content: "";
+            width: 100%;
+            height: 3px;
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            background: var(--secondary-color);
+          }
+          a {
+            color: #fff;
+            font-family: "Gilroy Medium";
+          }
         }
       }
     }

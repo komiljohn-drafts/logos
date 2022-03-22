@@ -1,0 +1,29 @@
+@import "../../styles/mixins";
+
+.category {
+  padding: 50px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  .slider {
+    // width: 100%;
+  }
+  .wrapper {
+    max-width: 1240px;
+    margin-inline: auto;
+    margin-bottom: 50px;
+    .title {
+      text-transform: uppercase;
+      @include font(32px, 39px, 700, #fff);
+      font-family: var(--font-regular);
+      position: relative;
+      padding-left: 30px;
+      &::before {
+        content: "";
+        width: 4px;
+        height: 33px;
+        background: var(--secondary-color);
+        position: absolute;
+        left: 10px;
+      }
+    }
+  }
+}

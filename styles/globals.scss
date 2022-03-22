@@ -1,9 +1,27 @@
 @import "./mixins";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.react-slick * {
+  min-height: 0;
+  min-width: 0;
+}
+
+.react-slick .slick-prev,
+.react-slick .slick-next {
+  background-color: rgb(187, 184, 184);
+  border-radius: 10px;
+}
+
+.react-slick .fluid__instructions {
+  margin-top: 30px;
+}
 
 :root {
   --primary-color: #403c3b;
   --secondary-color: linear-gradient(to right bottom, #618967, #72a479);
   --bg-primary: #504b4a;
+  --box-shadow: 0px 5px 10px rgba(114, 163, 121, 0.7);
   --font-light: "Gilroy Light";
   --font-regular: "Gilroy Regular";
   --font-medium: "Gilroy Medium";

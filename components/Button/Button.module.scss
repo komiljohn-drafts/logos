@@ -8,6 +8,10 @@
   border-radius: 10px;
   display: flex;
   align-items: center;
+  transition: all 0.3s ease;
+  &:hover {
+    box-shadow: var(--box-shadow);
+  }
 }
 
 .secondary {
